@@ -7,7 +7,7 @@ WORKDIR /app
 
 # Зависимости
 COPY . .
-RUN pip install --no-cache-dir -r ./src/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Код приложения
 
