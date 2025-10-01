@@ -41,4 +41,4 @@ jobs:
           docker rm ml-service || true
           docker rmi rhammatov/vital_scope_ml || true
           docker pull rhammatov/vital_scope_ml:latest || true
-          docker run -d -ti --name ml-service -p 8082:8082 rhammatov/vital_scope_ml:latest
+          docker run -d -ti --name ml-service -p 8082:8082 -v /proxy:/proxy rhammatov/vital_scope_ml:latest
