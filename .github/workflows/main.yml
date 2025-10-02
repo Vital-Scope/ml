@@ -33,7 +33,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: 176.108.245.175
-        username: radis
+        username: user1
         key: ${{ secrets.SSHKEY2 }}
         port: 22
         script: |
